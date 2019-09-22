@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="my.js"></script>
+
+    <title>Total Bill at Restaurant</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+                <h1 style="text-align: center;">Maitre D</h1>
+                <br><br>
+                <label for="total">Total:</label>
+                <input type="text" id="total" size="35" required>
+                <br><br><br>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        Tip: <span id="tip">$0.00</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <label>Rate:</label>
+                        <input type="text" id="rate" size="7" required>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        Tax: <span id="tax">$0.00</span>
+                        <br><br><br>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        Grand Total: <span id="gtotal">$0.00</span>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 offset-sm-4">
+                        <button type="button" onclick="calculate()" style="color: blue;">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
